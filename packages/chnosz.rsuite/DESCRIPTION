@@ -14,5 +14,6 @@ Imports: logging,
   rmarkdown,
   evaluate,
   formatR,
-  xfun
+  xfun,
+  usethis
 RoxygenNote: 6.1.1
