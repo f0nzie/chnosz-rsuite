@@ -1,0 +1,17 @@
+---
+knit: "bookdown::render_book"
+title: "CHNOSZ"
+author: ["Alfonso Reyes"]
+description: "This book will teach you how to do data science with R: You'll learn how to get your data into R, get it into the most useful structure, transform it, visualise it and model it. You'll learn how to use the grammar of graphics, literate programming, and reproducible research to save time. You'll also learn how to manage cognitive resources to facilitate discoveries when wrangling, visualising, and exploring data."
+url: 'https\://r4ds.had.co.nz/'
+github-repo: hadley/r4ds
+site: bookdown::bookdown_site
+documentclass: book
+---
+
+# Welcome {-} 
+
+This book will teach you how to do data science with R: You'll learn how to get your data into R, get it into the most useful structure, transform it, visualise it and model it. In this book, you will find a practicum of skills for data science.  You'll also learn how to manage cognitive resources to facilitate discoveries when wrangling, visualising, and exploring data. 
+
+
+The book is written in [RMarkdown](https://rmarkdown.rstudio.com) with [bookdown](https://bookdown.org).
