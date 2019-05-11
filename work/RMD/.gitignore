@@ -1,0 +1,8 @@
+*
+!.gitignore
+!*.Rmd
+!*.csl
+!*.png
+!*.bib
+!*.css
+
