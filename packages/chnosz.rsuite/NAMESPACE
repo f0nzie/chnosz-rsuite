@@ -2,6 +2,7 @@
 
 export(chnosz.rsuite_getLogger)
 import(CHNOSZ)
+import(formatR)
 import(logging)
 import(tufte)
 

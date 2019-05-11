@@ -12,5 +12,6 @@ Imports: logging,
   tufte,
   knitr,
   rmarkdown,
-  evaluate
+  evaluate,
+  formatR
 RoxygenNote: 6.1.1

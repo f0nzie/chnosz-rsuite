@@ -7,4 +7,5 @@
 #' @import logging
 #' @import CHNOSZ
 #' @import tufte
+#' @import formatR
 NULL
