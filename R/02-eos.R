@@ -23,5 +23,5 @@ library(chnosz.rsuite)
 
 setwd(file.path(rprojroot::find_rstudio_root_file(), "work", "RMD"))
 
-rmarkdown::render("eos-regres.Rmd")
+rmarkdown::render("eos-regres.Rmd", output_format = "all")
 

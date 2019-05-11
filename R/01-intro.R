@@ -23,5 +23,5 @@ library(chnosz.rsuite)
 
 setwd(file.path(rprojroot::find_rstudio_root_file(), "work", "RMD"))
 
-rmarkdown::render("anintro_chnosz.Rmd")
+rmarkdown::render("anintro_chnosz.Rmd", output_format = "all")
 
