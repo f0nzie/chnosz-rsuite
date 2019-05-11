@@ -1,8 +1,8 @@
-lib_path <- file.path("..", "libs")
-sbox_path <- file.path("..", "sbox")
+lib_path <- file.path(rprojroot::find_rstudio_root_file(), "libs")
+sbox_path <- file.path(rprojroot::find_rstudio_root_file(), "sbox")
 if (!file.exists(lib_path)) {
-  lib_path <- file.path("..", "deployment", "libs")
-  sbox_path <- file.path("..", "deployment", "sbox")
+  lib_path <- file.path(rprojroot::find_rstudio_root_file(), "deployment", "libs")
+  sbox_path <- file.path(rprojroot::find_rstudio_root_file(), "deployment", "sbox")
 }
 
 if (!dir.exists(sbox_path)) {
@@ -18,7 +18,7 @@ logging::addHandler(logging::writeToConsole, level = "FINEST")
 
 log_fpath <- (function() {
   log_file <- gsub("-", "_", sprintf("%s.log", Sys.Date()))
-  log_dir <- normalizePath(file.path("..", "logs"))
+  log_dir <- normalizePath(file.path(rprojroot::find_rstudio_root_file(), "logs"))
   fpath <- file.path(log_dir, log_file)
   if (file.exists(fpath) && file.access(fpath, 2) == -1) {
     fpath <- paste0(fpath, ".", Sys.info()[["user"]])
@@ -26,7 +26,7 @@ log_fpath <- (function() {
   return(fpath)
 })()
 
-log_dir <- normalizePath(file.path("..", "logs"))
+log_dir <- normalizePath(file.path(rprojroot::find_rstudio_root_file(), "logs"))
 if (dir.exists(log_dir)) {
   logging::addHandler(logging::writeToFile, level = "FINEST", file = log_fpath)
 }
