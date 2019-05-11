@@ -7,4 +7,10 @@ Author: datascience
 Maintainer: Who to complain to <yourfault@somewhere.net>
 Description: More about what it does (maybe more than one line)
 License: What license is it under?
-Imports: logging
+Imports: logging,
+  CHNOSZ,
+  tufte,
+  knitr,
+  rmarkdown,
+  evaluate
+RoxygenNote: 6.1.1
