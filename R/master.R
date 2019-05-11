@@ -16,3 +16,12 @@ source(file.path(script_path, "set_env.R"), chdir = T)
 
 config <- load_config()
 args <- args_parser()
+
+# ------------------------------------------------
+
+library(chnosz.rsuite)
+
+setwd(file.path(rprojroot::find_rstudio_root_file(), "work", "RMD"))
+
+rmarkdown::render("anintro_chnosz.Rmd")
+
