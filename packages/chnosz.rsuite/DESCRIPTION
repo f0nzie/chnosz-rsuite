@@ -13,5 +13,6 @@ Imports: logging,
   knitr,
   rmarkdown,
   evaluate,
-  formatR
+  formatR,
+  xfun
 RoxygenNote: 6.1.1
